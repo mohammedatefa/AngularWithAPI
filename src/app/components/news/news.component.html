@@ -1,0 +1,13 @@
+<div class="container-md my-3 py-3">
+<div class="row g-2">
+  <div *ngFor="let item of newslist" class="col-md-3">
+    <div class="card h-100">
+      <div class="card-body">
+        <h5 class="card-title">{{item.title}}</h5>
+        <p class="card-text">{{item.description}}</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

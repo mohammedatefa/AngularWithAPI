@@ -1,0 +1,15 @@
+<div class="container-md my-5 py-3">
+  <div *ngIf="errorMessage" class="alert alert-danger"> {{errorMessage}}</div>
+<div class="row g-4">
+<div class="col-md-3" *ngFor="let item of movies">
+  <div class="card" >
+    <img [src]="imagePrefix+item.poster_path" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{item.title}}</h5>
+      <p class="card-text" style="max-height: 150px; overflow:hidden; min-height: 150px;">{{item.overview}}</p>
+      <a href="#" class="btn btn-primary">Read More</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
